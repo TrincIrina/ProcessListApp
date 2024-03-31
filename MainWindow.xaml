@@ -1,0 +1,17 @@
+﻿<Window x:Class="ProcessListApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProcessListApp"
+        mc:Ignorable="d"
+        Title="List of the processes" FontSize="15" Height="600" Width="600">
+    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+        <ListBox x:Name="processListBox" Width="400" Margin="5"/>
+        <StackPanel Orientation="Vertical">
+            <Button x:Name="exitButton" Content="exit" Margin="5" Height="30" Width="150" VerticalAlignment="Top" Click="exitButton_Click"/>
+            <Button x:Name="informationButton" Content="information" Margin="5" Height="30" Width="150" VerticalAlignment="Top" Click="informationButton_Click"/>
+            <Button x:Name="updateButton" Content="update" Margin="5" Height="30" Width="150" VerticalAlignment="Top"/>
+        </StackPanel>
+    </StackPanel>
+</Window>
